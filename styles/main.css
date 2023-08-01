@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 12rem);
+    height: 100%;
+}
+
+.sndwch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right:0rem;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.title-sch{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.title-sch, .subtitle-sch{
+    text-align: center;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.subtitle-sch:nth-child(3){
+    margin-top: 1rem;
+}
+
+.title-uni{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    text-align: center;
+    flex-flow: row wrap;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.desc-uni{
+    text-align: center;
+}
+
+.uni{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    width: 80%;
+    padding: 0 1rem 2.5rem 1rem;
+    background-color: #780000;
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 5rem;
+    height: 5rem;
+    background-color: black;
+}
