@@ -3,17 +3,54 @@
     box-sizing: border-box;
 }
 
-.header{
+a{
+    text-decoration: none;
+}
+
+p{
+    width: 80%;
+    text-align: justify;
+}
+
+h3{
+    width: 80%;
+}
+
+embed{
+    height: 100%;
+}
+
+.header,.title,.title-link,.sndwch{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
+}
+
+.header,.logo,.title-link,.title-sch,.subtitle-sch,.title-uni{
     width: 100%;
+}
+
+.logo,.title,.title-link{
+    height: 100%;
+}
+
+.title-link{
+    color: white;
+}
+
+.duvida-desc{
+    padding: 1rem 5rem 0rem 5rem
+}
+
+.header{
+    justify-content: initial;
     height: 5rem;
     background-color: black;
     color: white;
 }
 
-.logo{
+.logo-cont{
     width: 5rem;
     height: 5rem;
     padding: 1rem;
@@ -21,17 +58,15 @@
 }
 
 .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: calc(100% - 12rem);
-    height: 100%;
+}
+
+.title-link:hover{
+    background-color: rgb(35, 35, 35);
+    padding: 0 1.25rem 0 1.25rem;
 }
 
 .sndwch{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     right:0rem;
     width: 5rem;
@@ -52,19 +87,22 @@ article{
 
 .title-sch, .subtitle-sch{
     text-align: center;
-    width: 100%;
     margin-top: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .subtitle-sch:nth-child(3){
     margin-top: 1rem;
 }
 
+.subsubtitle-sch{
+    font-size: 1.25rem;
+}
+
 .title-uni{
     display: flex;
     justify-content: center;
     padding: 1rem 0 1rem 0;
-    width: 100%;
     text-align: center;
     flex-flow: row wrap;
     font-size: xx-large;
@@ -88,8 +126,57 @@ article{
     text-decoration: none;
 }
 
+.duvida-cont{
+    width: 80%;
+    background-color: white;
+    color: black;
+    margin-top: 1rem;
+    padding: 0 1rem 2.5rem 1rem;
+}
+
 footer{
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
     margin-top: 5rem;
     height: 5rem;
     background-color: black;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+}
+
+.disabled-link {
+    pointer-events: none;
+    background-color: gray;
+  }
+
+.whatsapp-ico{
+    fill: white;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    position: fixed;
+    bottom: 20px;
+    right : 20px;
+    z-index: 10;
+}
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+
+.cronograma{
+    height: calc(100vh - 10rem);
 }
